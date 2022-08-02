@@ -1,0 +1,237 @@
+
+@import '_variables.scss';
+@import "_mixins.scss";
+
+
+body {
+    margin: 0;
+}
+  
+  
+  
+
+
+
+
+
+.container {
+    @include flexCenter(row);
+    @include mobile {
+        flex-direction: column;
+    };
+    margin: 5% 5% 5% 5%; 
+};
+
+span {
+    font-weight: map-get($font-weights, medium );
+};
+
+.infoAboutCountry {
+    width: 100%;
+    @include flexCenter(row);
+    align-items: center;
+}
+
+.container p {
+    font-weight: map-get($font-weights, bold );
+    font-size: 21px;
+}
+
+.countryAndFlag img {
+    height: auto;
+    width: 1200px;
+    max-width: 100%;
+}
+
+.info {
+    margin-left: 15%;
+}
+
+.flex {
+    @include flexCenter(row);
+};
+
+.flexContainer {
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    margin: 5% 5%;
+    @include mobile {
+        flex-direction: column;
+    };
+};
+
+.inputBG{
+    @include flexCenter(column);
+};
+
+.countriesFiltered {
+    margin-top: 50px;
+    box-shadow: $shadow;
+    transition: 0.3s;
+    padding: 5px;
+  };
+
+.countriesFiltered img {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+};
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1), 0px 10px 40px rgba(0, 0, 0, 0.06);
+    };
+
+    .Hero {
+        width: 100%;
+      height: auto;
+      
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../images/woman-g56256e6a3_1920.jpg');
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      object-fit: cover;
+      };
+
+      .countriesPadding {
+        padding: 16px 16px;
+      };
+
+    .input {
+        background: white;
+        width: 340px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding: 0 25px;
+        border-radius: 25px 25px;
+        box-shadow: $shadow;
+    };
+
+    body {
+        background-color: $background-color;
+        font-family: $font;
+    };
+
+.name {
+    font-weight: map-get($font-weights, bold );
+    font-size: 14px;
+};
+
+
+.flex p {
+    font-weight: map-get($font-weights, medium );
+    font-size: 16px;
+};
+
+.CountriesLink {
+    background-color: $accent-color;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+};
+
+.CountriesLink:hover, .CountriesLink:active {
+    background-color: black;
+  };
+
+.header {
+    @include flexCenter(row);
+};
+
+.header p {
+    margin-left: 5%;
+    font-weight: map-get($font-weights, bold );
+    font-size: 21px;
+};
+
+.buttonsWithRegions {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    width: 100%;
+    @include mobile {
+        flex-direction: column;
+    };
+};
+
+.buttonsWithRegions button {
+    color: rgb(58, 57, 57);
+    border: blue;
+    background-color: rgb(248, 248, 248);
+        font-family: $font;
+        margin: 15px;
+        font-weight: map-get($font-weights, bold );
+        font-size: 16px;
+};
+
+.buttonsWithRegions button:hover {
+    color: $accent-color;
+  }
+  
+.buttonsWithRegions button:focus {     
+    color: $accent-color;   
+};
+
+.Hero h1, .Hero p{
+    margin-left: 5%;
+    color: #ffffff;
+    max-width: 500px;
+};
+
+.Hero h3 {
+    margin-left: 5%;
+    color: $accent-color;
+}
+
+.Hero {
+    border: 0.1px solid black;
+    box-sizing: border-box;
+}
+
+.text {
+    margin-top: 50px;
+};
+
+.heroTextFlex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    @include mobile {
+        flex-direction: column;
+    };
+};
+
+
+.goBack  {
+    
+    margin-left: 5%;
+    font-weight: map-get($font-weights, bold );
+    padding-bottom: 10px;
+    text-decoration: none;
+    background-color: $accent-color;
+    color: $text-color;
+    padding: 5px 10px;
+    border-radius: 5px;
+};
+
+.countryDiv {
+    margin-top: 40px;
+};
+
+.bordersFlex {
+    display: flex;
+};
+
+.border {
+    list-style: none;
+    background-color: $accent-color;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+};
+
